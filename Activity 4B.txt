@@ -1,0 +1,37 @@
+package nil;
+
+import java.util.Scanner;
+
+public class NIL {
+
+    
+    public static void main(String[] args) {
+        Scanner nil =new Scanner(System.in);
+
+   int n;
+   int i;
+        
+               
+       System.out.print("Input character size: ");
+          n=nil.nextInt();
+     String a[];
+     a=new String[1000]; 
+     
+        System.out.print("Input Names: \n"); 
+    for(i=0;i<=n;i++)
+    {
+   
+ a[i]=nil.nextLine();
+   
+    }  
+         System.out.println();   
+    System.out.print("***********Result*********** \n");  
+    for(i=0;i<=n;i++) 
+{
+    
+        System.out.print(a[i]+" "); 
+            System.out.println();
+      }     
+    }
+    
+}
