@@ -1,0 +1,20 @@
+package nil;
+
+import java.util.Scanner;
+
+public class NIL {
+
+    
+    public static void main(String[] args) {
+        Scanner nil =new Scanner(System.in);
+char[] b;
+int a;
+        System.out.print("Enter Team Names: ");
+        for(int x=0;x<3;x++)
+        b=nil.next().toCharArray();
+        
+        System.out.print("Enter Scores: ");
+        a=nil.nextInt();
+    }
+    
+}
