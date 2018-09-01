@@ -1,0 +1,50 @@
+package nil;
+
+import java.util.Scanner;
+
+public class Nil {
+
+    
+    public static void main(String[] args) {
+        Scanner nil =new Scanner(System.in);
+String[] b;
+b=new String[100];
+String[] c;
+c=new String[100];
+int a = 0;
+int x;
+int y;
+System.out.print("Input Teams: ");
+          y=Integer.parseInt(nil.nextLine());
+         
+
+    
+        
+        for( x=0;x<y;x++)
+        {
+        System.out.print("Enter Team Names\n ");
+        b[x]=nil.nextLine();
+        
+       
+        
+        
+        System.out.print("Enter Game Titles\n ");
+        c[x]=nil.nextLine();
+        
+        
+       
+        
+       System.out.print("Enter Scores\n ");
+        a=nil.nextInt();
+        }
+
+ 
+   
+      if(a==50)  
+      {   
+      for(x=0;x<3;x++)
+      System.out.print(b[x]+"");
+      }    
+    
+}
+}
