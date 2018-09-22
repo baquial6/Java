@@ -1,0 +1,129 @@
+package nil;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Nil {
+
+    
+    @SuppressWarnings("empty-statement")
+    public static void main(String[] args) {
+        Scanner nil =new Scanner(System.in);
+
+   
+int a,b,c = 2;
+int x,y;
+String[][] Add = new String[10][10] ;
+String[][] Add1 = new String[10][10] ;
+    String username;
+    String password;
+    do
+    {
+    System.out.print("[1]Login\n[2]About\n[3]Close\n");
+    System.out.print("Enter Choice: ");
+    a=nil.nextInt();
+    
+    
+ if(a==1)
+ { 
+    System.out.print("Username: ");
+   username =nil.next();
+
+    System.out.print("Password: ");
+    password =nil.next();
+
+    
+
+    if(username.equals("Nil") && password.equals("anaekuh25")) 
+    {   
+    System.out.print("Menu\n[1]Add User\n[2]Display User\n[3]Logout\n");
+    System.out.print("Enter Choice: ");
+    b=nil.nextInt();
+    if(b==1)
+    {
+    System.out.print("How Many User You Want to Add?: ");
+     c=Integer.parseInt(nil.next());
+     for(x=0;x<c;x++)
+     {
+     for(y=0;y<1;y++)
+     {
+     System.out.print("Username: ");
+     Add[x][y]=nil.next();
+     }
+    }
+     
+     for(x=0;x<c;x++)
+     {
+     for(y=0;y<1;y++)
+     {
+     System.out.print("Password: ");
+     Add1[x][y]=nil.next();
+     }
+    }
+    }
+    if(b==2)
+    {
+    for(x=0;x<c;x++)
+     {
+     for(y=0;y<1;y++)
+     {
+         System.out.print("Username:");
+        
+        System.out.print(" "+Add[x][y]);
+        System.out.println();
+     }
+    }
+    for(x=0;x<c;x++)
+     {
+     for(y=0;y<1;y++)
+     {
+       System.out.print("Password:");
+        System.out.print(" "+Add1[x][y]); 
+       System.out.println();
+     }
+    }
+    
+    }
+    if(b==3)
+    {
+    System.exit(0);
+    }
+    }
+    else
+    {
+System.out.print("Sorry Invalid Username Or Password");
+ System.out.println();
+    }
+ }
+ 
+ 
+ if(a==2)
+ {
+ System.out.print("About The Author\n\nName: Ronnil L. Baquial\nAge: 22 YRS Old\nAddress: Brgy. Luna Ormoc City");
+ System.out.println();
+ }
+ if(a==3)
+    {
+    System.exit(0);
+    }
+    }while(a<3);
+    }
+}
+  
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+    
+
+
+
+
